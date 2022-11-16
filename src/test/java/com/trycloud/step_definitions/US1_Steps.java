@@ -2,6 +2,7 @@ package com.trycloud.step_definitions;
 
 import com.trycloud.pages.LoginPage;
 import com.trycloud.utilities.BrowserUtils;
+import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -30,8 +31,9 @@ public class US1_Steps {
 
 
     }
-    @Then("verify the user should be at the dashboard {string} page")
-    public void verify_the_user_should_be_at_the_dashboard_page(String title) {
+    @Then("verify the user should be at the dashboard")
+    public void verify_the_user_should_be_at_the_dashboard_page() {
+        String title = "Dashboard - Trycloud";
         BrowserUtils.verifyTitleEquals(title);
     }
 }
