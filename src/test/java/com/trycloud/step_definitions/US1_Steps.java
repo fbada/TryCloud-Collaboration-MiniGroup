@@ -6,7 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Demo_Login_Steps {
+public class US1_Steps {
     LoginPage cloudDriver= new LoginPage();
     @Given("user on the login page")
     public void user_on_the_login() {
