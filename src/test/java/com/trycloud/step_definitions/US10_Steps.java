@@ -18,9 +18,9 @@ public class US10_Steps {
     LoginPage loginPage = new LoginPage();
     DashboardCommon dashboardCommon = new DashboardCommon();
     FilesPage filesPage = new FilesPage();
-    String systemPath = System.getProperty("user.dir");
-    String filePath = systemPath + "/src/test/resources/UploadingFIles/Whhyyy.png";
-    String fileName = filePath.substring(filePath.lastIndexOf('/') + 1, filePath.lastIndexOf('.'));
+    public static final String systemPath = System.getProperty("user.dir");
+    public static final String filePath = systemPath + "/src/test/resources/UploadingFIles/Whhyyy.png";
+    public static final String fileName = filePath.substring(filePath.lastIndexOf('/') + 1, filePath.lastIndexOf('.'));
 ///Users/rds1/Desktop/LearnSamples/TryCloud-MiniGroup/src/test/resources/UploadingFIles/Whhyyy.png
     @When("user clicks Settings on the left bottom corner")
     public void user_clicks_settings_on_the_left_bottom_corner() {
