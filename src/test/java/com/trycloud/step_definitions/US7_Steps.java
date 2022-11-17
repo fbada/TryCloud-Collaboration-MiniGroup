@@ -15,16 +15,10 @@ FilesPage filesPage = new FilesPage();
 
 
 
-
-    @When("user clicks the add icon on the top")
-    public void user_clicks_the_add_icon_on_the_top() {
-        filesPage.addButton.click();
-
-
-    }
-
     @When("user clicks on {string} option")
     public void user_clicks_on_option(String string) {
+        filesPage.addButton.click();
+        BrowserUtils.waitFor(2);
         Driver.getDriver().findElement(By.xpath("//span[.='"+string+"']/..")).click();
         BrowserUtils.waitFor(2);
 
@@ -33,7 +27,8 @@ FilesPage filesPage = new FilesPage();
 
     @When("user write a folder name")
     public void user_write_a_folder_name() {
-        folderName = "Folder_oo1";
+        Faker faker = new Faker();
+        folderName = "Folder"+faker.number().randomDigitNotZero();
         filesPage.newFolderTextBox.sendKeys(folderName);
 
 

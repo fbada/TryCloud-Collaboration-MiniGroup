@@ -1,6 +1,6 @@
 Feature: As a user, I should be able to remove files from the favorites and upload a file directly
 Story: As a user, I should be able to manage folders.
-
+@US7
  Scenario Outline: Verify users can add the folder
 
    Given user on the login page
@@ -24,7 +24,6 @@ Story: As a user, I should be able to manage folders.
     And user click the login button
     When the user clicks the "Files" module
     When user choose a folder from the page
-    And user clicks the add icon on the top
     And user uploads file with the "Upload" file option
     Then verify the file is displayed on the page
 
