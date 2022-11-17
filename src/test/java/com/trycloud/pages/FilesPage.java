@@ -1,7 +1,10 @@
 package com.trycloud.pages;
 
+import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -66,5 +69,22 @@ public class FilesPage {
 
     @FindBy(xpath = "(//td//span[@class='innernametext'])")
     public List<WebElement> files;
+
+    public WebElement getfileUploadedAction(String name) {
+        return Driver.getDriver().findElement(By.xpath("//span[.='" + name + "' " +
+                "and @class='innernametext']/../..//a[@class='action action-menu permanent']"));
+    }
+
+    public void deleteUploadedFile(String fileName) {
+        Actions action = new Actions(Driver.getDriver());
+        BrowserUtils.scrollToElement(getfileUploadedAction(fileName));
+        BrowserUtils.waitFor(1);
+        BrowserUtils.highlight(getfileUploadedAction(fileName));
+        BrowserUtils.clickWithJS(getfileUploadedAction(fileName));
+        BrowserUtils.waitFor(1);
+        BrowserUtils.highlight(deleteDropdown);
+        BrowserUtils.clickWithJS(deleteDropdown);
+        BrowserUtils.waitFor(1);
+    }
 
 }
