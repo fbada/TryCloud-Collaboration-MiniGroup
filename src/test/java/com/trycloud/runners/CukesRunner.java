@@ -8,21 +8,18 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {
                 "pretty",
+                "json:target/cucumber.json",
                 "html:target/cucumber-reports.html",
-        "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
                 "rerun:target/rerun.text"},
         features = "src/test/resources/features",
         glue = "com/trycloud/step_definitions",
         dryRun = false,
         publish = true,
-        tags ="@US1"
+        tags = "@smoketest"
 
 )
 public class CukesRunner {
-
-
-    
-
 
 
 }

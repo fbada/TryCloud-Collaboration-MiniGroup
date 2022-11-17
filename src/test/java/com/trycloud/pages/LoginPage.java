@@ -1,5 +1,6 @@
 package com.trycloud.pages;
 
+import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Config;
 import com.trycloud.utilities.Driver;
 import org.junit.Assert;
@@ -26,8 +27,7 @@ public class LoginPage extends BasePage{
 
 
     @FindBy(xpath = "//input[@type='submit']")
-    private WebElement loginButton;
-
+    public WebElement loginButton;
 
     @FindBy(xpath = "//a[@id='lost-password']")
     private WebElement lostPasswordBtn;
@@ -37,13 +37,6 @@ public class LoginPage extends BasePage{
 
     @FindBy(xpath = "//div//p[contains(text(),'Wrong username')]")
     public WebElement wrongMsg;
-
-
-
-
-
-
-
 
     public void navigateTo(){
         Driver.getDriver().get(Config.getProperty("trycloudEnv"));
@@ -56,6 +49,12 @@ public class LoginPage extends BasePage{
     }
 
     public void user_click_loginBtn(){
+
+    }
+
+    public void loginConfigCreds(){
+        usernameBox.sendKeys(Config.getProperty("username"));
+        passwordBox.sendKeys(Config.getProperty("password"));
         loginButton.click();
 
     }
