@@ -1,7 +1,11 @@
 package com.trycloud.pages;
 
+import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Driver;
+import org.apache.commons.io.file.DeleteOption;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -16,8 +20,14 @@ public class FilesPage {
     @FindBy(xpath = "//span[@class='icon icon-add']/..")
     public WebElement addButton;
 
+    @FindBy(xpath = "//input[@class='icon-confirm']")
+    public WebElement newFolderSubmit;
+
     @FindBy(xpath = "td[@class='selection']/label")
     public List<WebElement> allFiles;
+
+    @FindBy(xpath = "//input[@id='view13-input-folder']")
+    public WebElement newFolderTextBox;
 
     @FindBy(xpath = "//label[@for='select_all_files']")
     public WebElement selectAll;
@@ -67,4 +77,37 @@ public class FilesPage {
     @FindBy(xpath = "(//td//span[@class='innernametext'])")
     public List<WebElement> files;
 
+    @FindBy(xpath = "(//a/span[@class='icon icon-delete'])[2]")
+    public WebElement DeleteOption;
+
+    public WebElement getfileUploadedAction(String name) {
+        return Driver.getDriver().findElement(By.xpath("//span[.='" + name + "' " +
+                "and @class='innernametext']/../..//a[@class='action action-menu permanent']"));
+    }
+
+    public void deleteUploadedFile(String fileName) {
+        Actions action = new Actions(Driver.getDriver());
+        BrowserUtils.scrollToElement(getfileUploadedAction(fileName));
+        BrowserUtils.waitFor(1);
+        BrowserUtils.highlight(getfileUploadedAction(fileName));
+        BrowserUtils.clickWithJS(getfileUploadedAction(fileName));
+        BrowserUtils.waitFor(1);
+        BrowserUtils.highlight(deleteDropdown);
+        BrowserUtils.clickWithJS(deleteDropdown);
+        BrowserUtils.waitFor(1);
+    }
+
+
+    public void actionButtonLastFile() {
+
+        String xpath = "(//tbody//span[@class='icon icon-more'])[" + listActions.size() + "]";
+        Driver.getDriver().findElement(By.xpath(xpath)).click();
+        BrowserUtils.waitFor(2);
+        DeleteOption.click();
+        BrowserUtils.waitFor(2);
+
+    }
+
+    @FindBy(xpath = "//tbody//td//div[contains(@style,'folder')]")
+    public List<WebElement> folderFiles;
 }
