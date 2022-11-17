@@ -1,7 +1,5 @@
 package com.trycloud.step_definitions;
-
 import com.github.javafaker.Faker;
-import com.trycloud.pages.FileAccessPage;
 import com.trycloud.pages.FilesPage;
 import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Driver;
@@ -14,6 +12,7 @@ public class US7_Steps {
 FilesPage filesPage = new FilesPage();
     String folderName;
     public static final String pathFile = "";
+
 
 
 
