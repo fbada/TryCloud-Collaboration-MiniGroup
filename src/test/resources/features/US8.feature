@@ -1,6 +1,7 @@
+@US8
+
 Feature: As a user, I should be able to access to Files module.
 
-Feature: As a user, I should be able to delete a file/folder.
 
 
   Scenario Outline: Verify users delete a file/folder
