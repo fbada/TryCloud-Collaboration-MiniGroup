@@ -12,4 +12,7 @@ public class ContactsPage {
 
     @FindBy(xpath = "(//div//ul//a[@aria-label='Contacts'])[1]")
     public WebElement contactsModule;
+    @FindBy (xpath = "//div[@class='app-content-list-item-line-one']")
+    public WebElement contactPageList;
+
 }
