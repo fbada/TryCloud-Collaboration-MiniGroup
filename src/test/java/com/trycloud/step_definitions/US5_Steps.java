@@ -27,6 +27,11 @@ public class US5_Steps {
     public void userEntersAnd(
             String username, String password) {
         loginPage.trycloud_login(username, password);
+
+        }
+    @When("User click the login button")
+    public void user_click_the_login_button() {
+        loginPage.loginButton.click();
     }
 
     @And("the user clicks the Files module")
@@ -59,9 +64,7 @@ public void theUsersClickActionIconFromAnyFileOnThePage() {
 
     @Then("Verify the chosen file is listed on the table")
     public void verifyTheChosenFileIsListedOnTheTable() {
-            BrowserUtils.waitFor(2);
-            System.out.println("fileName = " + fileName);
-            Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//span[.='" + fileName + "']")).isDisplayed());
+
 
             BrowserUtils.waitFor(3);
             filesPage.deleteUploadedFile(fileName);

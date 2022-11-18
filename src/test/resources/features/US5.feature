@@ -7,6 +7,7 @@ Feature: As a user, I should be able to access to Files module.
     Given user is on the login page
 
     When user enters "<username>" and "<password>"
+    When user click the login button
 
     And the user clicks the "Files" module
 
@@ -18,4 +19,6 @@ Feature: As a user, I should be able to access to Files module.
 
     Then Verify the chosen file is listed on the table
 
-    Examples:| username | password |
+    Examples:
+      | username    | password    |
+      | user7       | Userpass123 |
