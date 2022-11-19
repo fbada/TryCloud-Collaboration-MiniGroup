@@ -38,6 +38,9 @@ public class FilesPage {
     @FindBy(xpath = "//div[@id='uploadprogressbar']")
     public WebElement progressBar;
 
+    @FindBy(xpath = "//a[@class='menuitem action action-favorite permanent']")
+    public WebElement addfavoriteOption;
+
     @FindBy (xpath = "//div[@class='toastify on dialogs error toastify-right toastify-top']/span")
     public WebElement notEnoughSpaceBtn;
 
@@ -71,7 +74,7 @@ public class FilesPage {
     @FindBy(xpath = "//a/p")
     public WebElement storageAmount;
 
-    @FindBy(xpath = "(//tbody//span[@class='icon icon-more'])")
+    @FindBy(xpath = "//tbody//tr//a[@data-action ='menu']/span[@class='icon icon-more']")
     public List<WebElement> listActions;
 
     @FindBy(xpath = "(//td//span[@class='innernametext'])")
@@ -79,6 +82,26 @@ public class FilesPage {
 
     @FindBy(xpath = "(//a/span[@class='icon icon-delete'])[2]")
     public WebElement DeleteOption;
+
+    @FindBy(xpath = "//*[@id=\"fileList\"]/tr[16]/td[2]/a/span[2]/a[2]/span[1]")
+    public  WebElement lastActionsButton;
+
+    public WebElement subModule(String string) {
+        return Driver.getDriver().findElement(By.xpath("//li/a[.='" + string + "']"));
+    }
+
+    public void actionButtonLastFileFav(int index) {
+
+        String xpath = "(//tbody//span[@class='icon icon-more'])[" + index + "]";
+        Driver.getDriver().findElement(By.xpath(xpath)).click();
+        BrowserUtils.waitFor(2);
+    }
+
+
+    public String nameOfFirstFileSelected() {
+        return Driver.getDriver().findElement(By.
+                xpath("(//td//span[@class='innernametext'])[1]")).getText();
+    }
 
     public WebElement getfileUploadedAction(String name) {
         return Driver.getDriver().findElement(By.xpath("//span[.='" + name + "' " +
@@ -110,4 +133,23 @@ public class FilesPage {
 
     @FindBy(xpath = "//tbody//td//div[contains(@style,'folder')]")
     public List<WebElement> folderFiles;
+
+    public void selectOption(String option){
+        Actions actions = new Actions(Driver.getDriver());
+
+        if (option.equals("Add to favorites")) {
+            actions.click(addfavoriteOption).perform();
+        }
+        if (option.equals("Delete")) {
+            actions.click(DeleteOption).perform();
+        }
+        if (option.equals("Remove from favorites")) {
+            actions.click(addfavoriteOption).perform();
+        }
+        if (option.equals("Details")) {
+            actions.click(detailsOption).perform();
+        }
+        BrowserUtils.waitFor(2);
+
+    }
 }

@@ -1,8 +1,8 @@
 Feature: As a user, I should be able to remove files from favorites and upload a file directly
   Story: As a user, I should be able to edit favorites files.
   #WAIITING ON MUSA for Favorites Logic
+  @US6
   Scenario Outline: Verify users to remove files to Favorites
-
     Given user on the login page
     When user types username "<username>" and password "<password>"
     And user click the login button
@@ -15,11 +15,10 @@ Feature: As a user, I should be able to remove files from favorites and upload a
     Examples:
       | username | password    |
       | User4    | Userpass123 |
-  #    | User34   | Userpass123 |
-    #  | User64   | Userpass123 |
-     # | User94   | Userpass123 |
+     # | User34   | Userpass123 |
+      #| User64   | Userpass123 |
+      #| User94   | Userpass123 |
 
-  @US6
   Scenario Outline: verify users to upload a file from Files Given user on the dashboard page
     Given user on the login page
     When user types username "<username>" and password "<password>"
