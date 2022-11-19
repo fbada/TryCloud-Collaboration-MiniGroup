@@ -5,7 +5,6 @@ import com.trycloud.pages.FilesPage;
 import com.trycloud.pages.LoginPage;
 import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Driver;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -22,6 +21,7 @@ public class US10_Steps {
     public static final String filePath = systemPath + "/src/test/resources/UploadingFIles/Whhyyy.png";
     public static final String fileName = filePath.substring(filePath.lastIndexOf('/') + 1, filePath.lastIndexOf('.'));
 ///Users/rds1/Desktop/LearnSamples/TryCloud-MiniGroup/src/test/resources/UploadingFIles/Whhyyy.png
+
     @When("user clicks Settings on the left bottom corner")
     public void user_clicks_settings_on_the_left_bottom_corner() {
         filesPage.settingsButton.click();
@@ -31,7 +31,6 @@ public class US10_Steps {
 
     @Then("the user should be able to click any buttons")
     public void the_user_should_be_able_to_click_any_buttons() {
-
         for (WebElement checkBox : filesPage.settingsCheckboxes) {
             BrowserUtils.highlight(checkBox);
             checkBox.click();
@@ -40,20 +39,15 @@ public class US10_Steps {
             checkBox.click();
         }
     }
-
-
     String beforeStorage, afterStorage;
-
     @When("user checks the current storage usage")
     public void user_checks_the_current_storage_usage() {
         beforeStorage = filesPage.storageAmount.getText();
         System.out.println("beforeStorage = " + beforeStorage);
-
     }
 
-    @And("user uploads file with the {string} file option")
-    public void userUploadsFileWithTheOption(String arg0) {
-
+    @When("user uploads file with the {string} file option")
+    public void user_uploads_file_with_the_file_option(String string) {
         filesPage.addButton.click();
         BrowserUtils.waitFor(2);
         filesPage.uploadStart.sendKeys(filePath);
@@ -90,14 +84,9 @@ public class US10_Steps {
         BrowserUtils.waitFor(1);
         Assert.assertTrue(Double.parseDouble(beforeStorage) < Double.parseDouble(afterStorage));
 
-
         //Delete the element
         filesPage.deleteUploadedFile(fileName);
         //  Driver.closeDriver();
     }
 
-    @When("the user enters {string} and {string}")
-    public void theUserEntersAnd(String arg0, String arg1) {
-        loginPage.trycloud_login(arg0, arg1);
-    }
 }
