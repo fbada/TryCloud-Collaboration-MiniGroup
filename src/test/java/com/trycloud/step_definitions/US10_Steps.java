@@ -39,7 +39,9 @@ public class US10_Steps {
             checkBox.click();
         }
     }
+
     String beforeStorage, afterStorage;
+
     @When("user checks the current storage usage")
     public void user_checks_the_current_storage_usage() {
         beforeStorage = filesPage.storageAmount.getText();
@@ -80,13 +82,10 @@ public class US10_Steps {
         beforeStorage = beforeStorage.substring(0, beforeStorage.indexOf(' '));
 
         System.out.println(afterStorage);
-
         BrowserUtils.waitFor(1);
         Assert.assertTrue(Double.parseDouble(beforeStorage) < Double.parseDouble(afterStorage));
-
         //Delete the element
         filesPage.deleteUploadedFile(fileName);
         //  Driver.closeDriver();
     }
-
 }
