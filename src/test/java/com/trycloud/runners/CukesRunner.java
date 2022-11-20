@@ -14,9 +14,9 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.text"},
         features = "src/test/resources/features",
         glue = "com/trycloud/step_definitions",
-        dryRun = true,
+        dryRun = false,
         publish = true,
-        tags = "@US8"
+        tags = "@US5"
 
 )
 public class CukesRunner {

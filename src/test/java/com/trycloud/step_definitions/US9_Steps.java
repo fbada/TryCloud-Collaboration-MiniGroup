@@ -6,9 +6,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class US9_Steps { @And("the user choose the {string} option")
+public class US9_Steps {
+    @And("the user choose the {string} option")
 public void theUserChooseTheOption(String details) {
     US9page.detailsOnRightClickMenu(details);
+
     BrowserUtils.waitFor(1);
 }
 
@@ -16,7 +18,7 @@ public void theUserChooseTheOption(String details) {
     public void userWriteACommentInsideTheInputBox() {
         US9page.commentBtn.click();
         BrowserUtils.waitFor(1);
-        String sendMsg = "Lambada7";
+        String sendMsg = "Testing123";
         US9page.textAreaInDetails.sendKeys(US9page.sendMsg());
         BrowserUtils.waitFor(1);
     }

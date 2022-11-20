@@ -7,11 +7,12 @@ Feature: As a user, I should be able to access to Files module.
     Given user is on the login page
 
     When user enters "<username>" and "<password>"
+
     When user click the login button
 
-    And the user clicks the "Files" module
+    When the user clicks the "Files" module
 
-    And the users click action-icon from any file on the page
+    When the user clicks action-icon from any file on the page
 
     And user choose the Add to favorites option
 
@@ -21,4 +22,4 @@ Feature: As a user, I should be able to access to Files module.
 
     Examples:
       | username    | password    |
-      | user7       | Userpass123 |
+      | user4       | Userpass123 |
