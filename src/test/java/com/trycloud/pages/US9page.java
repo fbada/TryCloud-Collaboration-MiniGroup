@@ -31,7 +31,7 @@ public class US9page extends BasePage{
     public static List<WebElement> verifyMsg;
 
     public static String sendMsg(){
-        String sendMsg = "LONDON";
+        String sendMsg = "Testing321";
         return sendMsg;
     }
 

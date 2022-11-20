@@ -11,16 +11,11 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.interactions.Actions;
 
 public class US8_Steps {
-//    @When("the user clicks the {string} module")
-//    public void theUserClicksTheModule(String files) {
-//        US8page.selectTopModule(files);
-
-
 
     @And("user click action-icon from any file on the page")
     public void userClickActionIconFromAnyFileOnThePage() {
         Actions actions = new Actions(Driver.getDriver());
-        actions.contextClick(US8page.deletedFileName).build().perform();
+        actions.click(US8page.deletedFileName).build().perform();
         US8page.fileName();
         BrowserUtils.waitFor(2);
     }
@@ -33,7 +28,6 @@ public class US8_Steps {
 
     @When("the user clicks the {string} sub-module on the left side")
     public void theUserClicksTheSubModuleOnTheLeftSide(String deletedFiles) {
-
         US8page.deletedFiles(deletedFiles);
     }
 
@@ -41,22 +35,5 @@ public class US8_Steps {
     public void verifyTheDeletedFileIsDisplayedOnThePage() {
 
         US8page.verifyDeletedFileUS8();
-    }}
-//    @When("user click action-icon from any file on the page")
-//public void user_click_action_icon_from_any_file_on_the_page() {
-//
-//}
-//    @When("user choose the {string} option")
-//    public void user_choose_the_option(String string) {
-//
-//
-//    }
-//    @When("the user clicks the {string} sub-module on the left side")
-//    public void the_user_clicks_the_sub_module_on_the_left_side(String string) {
-//
-//    }
-//    @Then("Verify the deleted file is displayed on the page.")
-//    public void verify_the_deleted_file_is_displayed_on_the_page() {
-//
-//    }
-//}
+    }
+}
