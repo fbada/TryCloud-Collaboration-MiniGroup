@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         glue = "com/trycloud/step_definitions",
         dryRun = false,
         publish = true,
-        tags = "@US9 or @US5 or @US8"
+        tags = "@US6-1"
 )
 public class CukesRunner {
 

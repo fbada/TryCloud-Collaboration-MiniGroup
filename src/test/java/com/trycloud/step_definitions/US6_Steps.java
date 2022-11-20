@@ -17,6 +17,21 @@ public class US6_Steps {
     FileFavoritesPage fileFavoritesPage = new FileFavoritesPage();
     String name;
 
+    @When("the user clicks action-icon from any file on the page to remove")
+    public void the_users_click_action_icon_from_any_file_on_the_page_to_remove() {
+
+        filesPage.actionButtonLastFileFav(filesPage.listActions.size());
+        BrowserUtils.sleep(2);
+        filesPage.selectOption("Add to favorites");
+        BrowserUtils.sleep(2);
+
+        //make sure there is at least one available to Remove from Favorites
+
+        name = filesPage.nameOfFirstFileSelected();
+        System.out.println("name = " + name);
+        filesPage.listActions.get(0).click();
+
+    }
 
     @Then("verify the file is displayed on the page")
     public void verify_the_file_is_displayed_on_the_page() {
@@ -27,14 +42,7 @@ public class US6_Steps {
         filesPage.deleteUploadedFile(fileName);
     }
 
-    @When("the users click action-icon from any file on the page to remove")
-    public void the_users_click_action_icon_from_any_file_on_the_page_to_remove() {
-        //make sure there is at least one available to Remove from Favorites
-        name = filesPage.nameOfFirstFileSelected();
-        System.out.println("name = " + name);
-        filesPage.listActions.get(0).click();
 
-    }
 
 
     @When("user choose the {string} option")

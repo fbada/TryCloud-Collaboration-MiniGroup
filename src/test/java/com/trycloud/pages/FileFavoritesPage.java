@@ -1,5 +1,6 @@
 package com.trycloud.pages;
 
+import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +11,7 @@ import java.util.List;
 import static com.trycloud.step_definitions.US10_Steps.filePath;
 
 public class FileFavoritesPage {
+    FilesPage filesPage = new FilesPage();
     public FileFavoritesPage(){
     PageFactory.initElements(Driver.getDriver(), this);
 }
@@ -34,6 +36,7 @@ public static  WebElement FavoritesSubmodule;
     public static WebElement favoritesButton;
 
 
+
     @FindBy (xpath = "//section[@id='tab-activityTabView']//li[1]//div[1]")
     public static WebElement verifyFavorites;
 
@@ -42,5 +45,11 @@ public static  WebElement FavoritesSubmodule;
 
     @FindBy(xpath = "//span[@class='innernametext']")
     public List<WebElement> listInFavorites;
+
+    public void addAFavorite(){
+        filesPage.actionButtonLastFileFav(filesPage.listActions.size());
+        filesPage.selectOption("Add to favorites");
+        BrowserUtils.waitFor(3);
+    }
 }
 
