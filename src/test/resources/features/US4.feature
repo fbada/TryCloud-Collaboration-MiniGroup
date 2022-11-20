@@ -14,6 +14,7 @@ Feature: As a user, I should be able to access to Files module.
       | user4       | Userpass123 |
 
 
+
   Scenario Outline: verify users can access to Files module
     Given user on the login page
     When user types username "<username>" and password "<password>"

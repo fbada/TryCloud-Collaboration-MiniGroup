@@ -13,19 +13,19 @@ public class US9page extends BasePage{
     @FindBy (xpath = "//div[@id='rightClickMenu']/ul/li[2]/a/span/following-sibling::span[.='Details']")
     public WebElement detailsOnRightClickMenu;
 
-    public static void detailsOnRightClickMenu(String str){
+    public void detailsOnRightClickMenu(String str){
         String locator = "//div[@id='rightClickMenu']/ul/li[2]/a/span/following-sibling::span[.='"+str+"']";
         Driver.getDriver().findElement(By.xpath(locator)).click();
     }
 
     @FindBy (xpath = "//a[@id='commentsTabView']/span")
-    public static WebElement commentBtn;
+    public WebElement commentBtn;
 
     @FindBy (xpath = "(//div[@class='message'])[1]")
     public static WebElement textAreaInDetails;
 
-    @FindBy (xpath = "//div[@class='message']/following-sibling::input[@type='submit']")
-    public static WebElement textSubmit;
+    @FindBy(xpath = "//input[@class='submit icon-confirm has-tooltip']")
+    public WebElement textSubmit;
 
     @FindBy (xpath = "//div[@class='message']")
     public static List<WebElement> verifyMsg;
