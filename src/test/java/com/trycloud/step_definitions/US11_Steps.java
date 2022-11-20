@@ -48,7 +48,7 @@ public class US11_Steps {
     }
     @Then("the user should be able to see the message is displayed on the conversation log")
     public void the_user_should_be_able_to_see_the_message_is_displayed_on_the_conversation_log() {
-       talkPage.fieldMessages.isDisplayed();
+       Assert.assertTrue(talkPage.fieldMessages.isDisplayed());
         System.out.println(talkPage.fieldMessages.getText());
     }
 

@@ -21,6 +21,7 @@ import org.openqa.selenium.support.PageFactory;
 
         @FindBy (xpath = "//div[@class='scroller']")
                 public WebElement fieldMessages;
+
         @FindBy (xpath = " //span[@class='acli__content__line-one__title']")
                 public WebElement userNumber;
 }

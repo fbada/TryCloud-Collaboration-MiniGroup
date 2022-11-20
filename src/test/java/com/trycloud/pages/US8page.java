@@ -55,14 +55,14 @@ public class US8page extends BasePage {
     @FindBy (xpath = "//span[@class='innernametext']")
     public static List<WebElement> filesNameInDeletedPage;
 
-    public static void verifyDeletedFileUS8(){
-        String deletedFileInDeletedFilesPage = "";
-        for (WebElement each: filesNameInDeletedPage){
-            if(each.getText().equalsIgnoreCase(deletedFileName.getText())){
-                break;
-            }
-            deletedFileInDeletedFilesPage += ""+each.getText();
-        }
-        Assert.assertEquals(deletedFileName.getText(), deletedFileInDeletedFilesPage);
-    }
+//    public static void verifyDeletedFileUS8(String deletedFileInDeletedFilesPage){
+//       deletedFileInDeletedFilesPage =
+//        for (WebElement each: filesNameInDeletedPage){
+//            if(each.getText().equalsIgnoreCase(deletedFileName.getText())){
+//                break;
+//            }
+//            deletedFileInDeletedFilesPage += ""+each.getText();
+//        }
+//        Assert.assertEquals(deletedFileName.getText(), deletedFileInDeletedFilesPage);
+//    }
 }
