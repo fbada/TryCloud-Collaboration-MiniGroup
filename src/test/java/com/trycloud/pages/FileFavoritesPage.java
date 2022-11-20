@@ -40,6 +40,7 @@ public static  WebElement FavoritesSubmodule;
     @FindBy (xpath = "(//span[@class='icon icon-starred'])")
     public static WebElement FavoritesOption;
 
-
+    @FindBy(xpath = "//span[@class='innernametext']")
+    public List<WebElement> listInFavorites;
 }
 

@@ -71,6 +71,11 @@ public class FilesPage {
     @FindBy(xpath = "//div[@id='app-settings-content']//label[contains(.,'Show')]")
     public List<WebElement> settingsCheckboxes;
 
+    public String nameOfFileSelected() {
+        return Driver.getDriver().findElement(By.
+                xpath("(//td//span[@class='innernametext'])[" + listActions.size() + "]")).getText();
+    }
+
     @FindBy(xpath = "//a/p")
     public WebElement storageAmount;
 
@@ -95,6 +100,10 @@ public class FilesPage {
         String xpath = "(//tbody//span[@class='icon icon-more'])[" + index + "]";
         Driver.getDriver().findElement(By.xpath(xpath)).click();
         BrowserUtils.waitFor(2);
+    }
+    public void dropDownOptions(String str) {
+        Driver.getDriver().findElement(By.xpath("//div[@id='rightClickMenu']//span[.='" + str + "']/..")).click();
+
     }
 
 
