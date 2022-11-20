@@ -28,7 +28,7 @@ FilesPage filesPage = new FilesPage();
     @When("user write a folder name")
     public void user_write_a_folder_name() {
         Faker faker = new Faker();
-        folderName = "Folder"+faker.number().randomDigitNotZero();
+        folderName = "Folder"+faker.numerify("###");
         filesPage.newFolderTextBox.sendKeys(folderName);
 
 
