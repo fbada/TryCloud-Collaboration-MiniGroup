@@ -53,6 +53,9 @@ public class FilesPage {
     @FindBy(xpath = "//aside//span[@class='icon icon-delete']")
     public  WebElement deleteCommentIcon;
 
+    @FindBy(xpath = "//input[@class='submit icon-confirm has-tooltip']")
+    public WebElement submitComment;
+
     @FindBy(xpath = "//a[@class='menuitem action action-details permanent']")
     public WebElement detailsOption;
 
@@ -139,6 +142,8 @@ public class FilesPage {
         BrowserUtils.waitFor(2);
 
     }
+
+
 
     @FindBy(xpath = "//tbody//td//div[contains(@style,'folder')]")
     public List<WebElement> folderFiles;

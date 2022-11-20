@@ -5,6 +5,7 @@ Feature: As a user, I should be able to write comments to files/folders.
   Scenario Outline: Verify users can add the folder
     Given user is on the login page
     When  user enters "<username>" and "<password>"
+    When user click the login button
     And  the user clicks the "Files" module
     And   user click action-icon from any file on the page
     And   the user choose the "Details" option
@@ -14,4 +15,4 @@ Feature: As a user, I should be able to write comments to files/folders.
 
     Examples:
       | username | password    |
-      | user2    | Userpass123 |
+      | user94    | Userpass123 |
