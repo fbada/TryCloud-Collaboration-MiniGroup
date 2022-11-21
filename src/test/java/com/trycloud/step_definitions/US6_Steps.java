@@ -9,6 +9,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import static com.trycloud.step_definitions.US10_Steps.fileName;
 
@@ -26,12 +27,18 @@ public class US6_Steps {
 //        System.out.println("Successfully added to faves");
 //        BrowserUtils.sleep(5);
 
+        for (int i = 0; i < 3; i++) {
+            BrowserUtils.waitFor(2);
+            filesPage.actionButtonLastFileFav(filesPage.listActions.size());
+            BrowserUtils.verifyElementDisplayed(filesPage.addfavoriteOption);
+            filesPage.selectOption("Add to favorites");
+        }
 
         //make sure there is at least one available to Remove from Favorites
         name = filesPage.nameOfFirstFileSelected();
         System.out.println("name = " + name);
-        filesPage.listActions.get(0).click();
-
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveToElement(filesPage.listActions.get(0)).click().perform();
 
     }
 
