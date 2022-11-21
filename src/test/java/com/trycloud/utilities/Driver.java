@@ -73,7 +73,7 @@ public class Driver {
                     driverPool.set(new FirefoxDriver(new FirefoxOptions().setHeadless(true)));
                     break;
             }
-            driverPool.get().manage().window().maximize();
+            driverPool.get().manage().window().fullscreen();
         }
         return driverPool.get();
     }
