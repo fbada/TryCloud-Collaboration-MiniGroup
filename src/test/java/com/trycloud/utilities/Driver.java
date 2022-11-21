@@ -50,30 +50,36 @@ public class Driver {
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName("firefox");
                         driverPool.set(new RemoteWebDriver(url, desiredCapabilities));
+                        driverPool.get().manage().window().maximize();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
                     break;
+
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
-
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("start-maximized");
                     break;
+
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver(new ChromeOptions().setHeadless(true)));
-
+                    driverPool.get().manage().window().maximize();
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driverPool.set((new FirefoxDriver()));
+                    driverPool.get().manage().window().maximize();
                     break;
                 case "firefox-headless":
                     WebDriverManager.firefoxdriver().setup();
                     driverPool.set(new FirefoxDriver(new FirefoxOptions().setHeadless(true)));
+
                     break;
             }
-            driverPool.get().manage().window().fullscreen();
+
         }
         return driverPool.get();
     }
