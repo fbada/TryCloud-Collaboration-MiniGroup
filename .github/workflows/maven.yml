@@ -18,7 +18,8 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [windows]
+        version: [10]
     runs-on: ${{ matrix.os }}
         
     steps:
