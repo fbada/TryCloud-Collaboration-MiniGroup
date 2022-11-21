@@ -11,7 +11,8 @@ Feature: As a user, I should be able to access to Files module.
 
     Examples:
       | username    | password    |
-      | user4       | Userpass123 |
+      | user34       | Userpass123 |
+
 
 
   Scenario Outline: verify users can access to Files module

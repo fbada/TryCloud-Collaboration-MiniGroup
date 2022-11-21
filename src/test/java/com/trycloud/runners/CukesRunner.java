@@ -12,12 +12,12 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports.html",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
                 "rerun:target/rerun.text"},
+
         features = "src/test/resources/features",
         glue = "com/trycloud/step_definitions",
         dryRun = false,
         publish = true,
-        tags = "@smoketest"
-
+        tags = ""
 )
 public class CukesRunner {
 
