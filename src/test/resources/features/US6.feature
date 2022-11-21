@@ -15,10 +15,10 @@ Feature: As a user, I should be able to remove files from favorites and upload a
 
     Examples:
       | username | password    |
-     # | User4    | Userpass123 |
+    #| User4    | Userpass123 |
      # | User34   | Userpass123 |
-     | User64   | Userpass123 |
-      #| User94   | Userpass123 |
+     #| User64   | Userpass123 |
+     | User94   | Userpass123 |
 
   Scenario Outline: verify users to upload a file from Files
     Given user on the login page
