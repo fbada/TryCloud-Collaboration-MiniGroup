@@ -7,6 +7,5 @@ Feature: As a user, I should be able to log in.
     And user click the login button
     Then verify the user should be at the dashboard
     Examples:
-      | username | password    |
-      | user64   | Userpass123 |
-      | user4    | Userpass123 |
+      | username    | password    |
+      | user7       | Userpass123 |

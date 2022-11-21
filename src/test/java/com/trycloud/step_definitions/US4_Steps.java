@@ -17,7 +17,7 @@ public class US4_Steps {
     @When("the user clicks the {string} module")
     public void theUserClicksTheModule(String module) {
         dashboardCommon.accessModules(module).click();
-        BrowserUtils.waitFor(4);
+        BrowserUtils.waitUntilVisible(filesPage.addButton, 15);
     }
 
     @When("user click the top-left checkbox of the table")

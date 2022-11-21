@@ -234,6 +234,7 @@ public class BrowserUtils {
      * Waits for provided element to be clickable
      *
      * @param element
+     * @param timeout
      * @return
      */
     public static WebElement waitForClickability(WebElement element, int timeout) {
