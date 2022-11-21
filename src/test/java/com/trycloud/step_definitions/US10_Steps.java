@@ -72,11 +72,12 @@ public class US10_Steps {
     @When("user refresh the page")
     public void user_refresh_the_page() {
         Driver.getDriver().navigate().refresh();
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(6);
     }
 
     @Then("the user should be able to see storage usage is increased")
     public void the_user_should_be_able_to_see_storage_usage_is_increased() {
+        BrowserUtils.scrollToElement(filesPage.storageAmount);
         afterStorage = filesPage.storageAmount.getText();
         afterStorage = afterStorage.substring(0, afterStorage.indexOf(' '));
         beforeStorage = beforeStorage.substring(0, beforeStorage.indexOf(' '));

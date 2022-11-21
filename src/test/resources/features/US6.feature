@@ -14,11 +14,11 @@ Feature: As a user, I should be able to remove files from favorites and upload a
 
     Examples:
       | username | password    |
-      | User4    | Userpass123 |
-     # | User34   | Userpass123 |
+     # | User4    | Userpass123 |
+      | User34   | Userpass123 |
       #| User64   | Userpass123 |
       #| User94   | Userpass123 |
-
+  @US6-2
   Scenario Outline: verify users to upload a file from Files Given user on the dashboard page
     Given user on the login page
     When user types username "<username>" and password "<password>"
@@ -29,4 +29,4 @@ Feature: As a user, I should be able to remove files from favorites and upload a
 
     Examples:
       | username | password    |
-      | User24    | Userpass123 |
+      | User64    | Userpass123 |
