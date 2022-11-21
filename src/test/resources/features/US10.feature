@@ -31,5 +31,5 @@ Feature: As a user, I should be able to update their settings.
       | username | password    |
       #| User4    | Userpass123 |
      # | User33   | Userpass123 |
-    #  | User63   | Userpass123 |
-      | User94   | Userpass123 |
+     | User63   | Userpass123 |
+   #   | User94   | Userpass123 |

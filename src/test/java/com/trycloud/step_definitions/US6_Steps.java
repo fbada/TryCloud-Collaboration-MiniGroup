@@ -19,7 +19,7 @@ public class US6_Steps {
 
     @When("the user clicks action-icon from any file on the page to remove")
     public void the_users_click_action_icon_from_any_file_on_the_page_to_remove() {
-
+BrowserUtils.waitFor(3);
         filesPage.actionButtonLastFileFav(filesPage.listActions.size());
         BrowserUtils.sleep(2);
         filesPage.selectOption("Add to favorites");
