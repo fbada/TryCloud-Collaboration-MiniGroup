@@ -19,19 +19,19 @@ public class US6_Steps {
 
     @When("the user clicks action-icon from any file on the page to remove")
     public void the_users_click_action_icon_from_any_file_on_the_page_to_remove() {
-
-        BrowserUtils.waitFor(3);
-        filesPage.actionButtonLastFileFav(filesPage.listActions.size());
-        filesPage.selectOption("Add to favorites");
-        System.out.println("Successfully added to faves");
-        BrowserUtils.sleep(5);
+//
+//        BrowserUtils.waitFor(3);
+//        filesPage.actionButtonLastFileFav(filesPage.listActions.size());
+//        filesPage.selectOption("Add to favorites");
+//        System.out.println("Successfully added to faves");
+//        BrowserUtils.sleep(5);
 
 
         //make sure there is at least one available to Remove from Favorites
-
         name = filesPage.nameOfFirstFileSelected();
         System.out.println("name = " + name);
         filesPage.listActions.get(0).click();
+
 
     }
 
