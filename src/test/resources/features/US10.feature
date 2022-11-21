@@ -11,7 +11,7 @@ Feature: As a user, I should be able to update their settings.
     Then the user should be able to click any buttons
     Examples:
       | username | password    |
-      | User4    | Userpass123 |
+      | User65    | Userpass123 |
   #    | User34   | Userpass123 |
     #  | User64   | Userpass123 |
      # | User94   | Userpass123 |
@@ -31,5 +31,5 @@ Feature: As a user, I should be able to update their settings.
       | username | password    |
       #| User4    | Userpass123 |
      # | User33   | Userpass123 |
-     | User63   | Userpass123 |
+     | User64   | Userpass123 |
    #   | User94   | Userpass123 |

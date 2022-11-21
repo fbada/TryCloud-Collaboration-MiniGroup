@@ -22,9 +22,10 @@ public class US6_Steps {
 
         BrowserUtils.waitFor(3);
         filesPage.actionButtonLastFileFav(filesPage.listActions.size());
-        BrowserUtils.sleep(2);
         filesPage.selectOption("Add to favorites");
-        BrowserUtils.sleep(2);
+        System.out.println("Successfully added to faves");
+        BrowserUtils.sleep(5);
+
 
         //make sure there is at least one available to Remove from Favorites
 
