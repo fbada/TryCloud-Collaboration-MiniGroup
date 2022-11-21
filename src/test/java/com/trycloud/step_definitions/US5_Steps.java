@@ -67,6 +67,7 @@ public class US5_Steps {
 
     @Then("Verify the chosen file is listed on the table")
     public void verifyTheChosenFileIsListedOnTheTable() {
+        BrowserUtils.waitFor(3);
         Assert.assertTrue(Driver.getDriver().findElement(By.xpath("(//tr//span[contains(.,'" + nameOfFile+ "')])[4]")).isDisplayed());
         Actions actions = new Actions(Driver.getDriver());
         actions.contextClick(Driver.getDriver().findElement(By.xpath("(//tr//span[contains(.,'" + nameOfFile + "')])[4]"))).perform();
