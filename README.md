@@ -26,20 +26,31 @@ Go to your project directory from terminal and hit following commands
 In your TestRunner class add a glue option:
 
 ```
-package stepDefintions;
+package com.trycloud.runners;
 
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-	plugin = {"html:target/cucumberHtmlReport"},
-	features = "classpath:features",
-	glue = {"info.seleniumcucumber.stepdefinitions"}
-)
+        plugin = {
+                "pretty",
+                "json:target/cucumber.json",
+                "html:target/cucumber-reports.html",
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "rerun:target/rerun.text"},
 
+        features = "src/test/resources/features",
+        glue = "com/trycloud/step_definitions",
+        dryRun = false,
+        publish = true,
+
+        tags = "@US6"
+
+)
 public class CukesRunner {
+
+
 }
 ```
