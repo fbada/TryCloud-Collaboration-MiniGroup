@@ -16,10 +16,9 @@ Writing a test
 
 The cucumber features goes in the `features` library and should have the ".feature" extension.
 
-
 Go to your project directory from terminal and hit following commands
-```mvn test (defualt will trigger a Jenkins workflow)
- mvn verify (defualt will trigger a local execution of the tests and use the surefire plug in to execute the feature files parallel )```
+`mvn test (defualt will trigger a Jenkins workflow)
+ mvn verify (defualt will trigger a local execution of the tests and use the surefire plug in to execute the feature files parallel )`
  
  Using canned tests in your project
 ----------------------------------
