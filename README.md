@@ -19,37 +19,31 @@ Go to your project directory from terminal and hit following commands
 `mvn test` (default will trigger a Jenkins workflow)
 `mvn verify` (default will trigger a local execution of the tests and use the surefire plug in to execute the feature files parallel )
  
- Using canned tests in your project
-----------------------------------
+Basic cucumber framework used for running automation tests on Jenkins.
+--------------
+Running locally
 
-In your TestRunner class add a glue option:
+To run locally and generate HTML reports, use this maven goal verify. HTML reports should be generated under target/cucumber-html-reports
 
-```
-package com.trycloud.runners;
+`mvn verify`
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
+Jenkins
+--------------
+Install Cucumber HTML report plugin. Create a simple job and use this repository in the repository url field. In the post build actions, select option Cucumber reports and point to the location of the cucumber json report. Run the project as a maven goal test.
 
-@RunWith(Cucumber.class)
-@CucumberOptions(
-        plugin = {
-                "pretty",
-                "json:target/cucumber.json",
-                "html:target/cucumber-reports.html",
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
-                "rerun:target/rerun.text"},
+`mvn test`
 
-        features = "src/test/resources/features",
-        glue = "com/trycloud/step_definitions",
-        dryRun = false,
-        publish = true,
+Tags
+--------------
+You can pass a custom tag using terminal. Available tags are @smoke, @regression.
 
-        tags = ""
+`mvn test -Dcucumber.filter.tags="@smoke"`
 
-)
-public class CukesRunner {
+Browsers
+--------------
+You can pass change using command line argument BROWSER
+
+`mvn test -DBROWSER=firefox`
 
 
-}
-```
+
