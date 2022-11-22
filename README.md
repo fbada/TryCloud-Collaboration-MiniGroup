@@ -8,7 +8,6 @@ selenium-cucumber : Automation Testing Using Java
 selenium-cucumber is a behavior driven development (BDD) approach to write automation test script to test Web.
 It enables you to write and execute automated acceptance/unit tests.
 It is cross-platform, open source and free.
-Automate your test cases with minimal coding.
 [More Details](http://seleniumcucumber.info/)
 
 Writing a test
@@ -46,7 +45,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
         publish = true,
 
-        tags = "@US6"
+        tags = ""
 
 )
 public class CukesRunner {
