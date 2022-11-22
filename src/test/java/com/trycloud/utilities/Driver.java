@@ -60,7 +60,9 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("start-maximized");
+                    options.addArguments("--start-maximized");
+                    options.addArguments("--start-maximized");
+
                     break;
 
                 case "chrome-headless":
