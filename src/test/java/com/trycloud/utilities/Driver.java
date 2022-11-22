@@ -1,6 +1,7 @@
 package com.trycloud.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -59,9 +60,7 @@ public class Driver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--start-maximized");
-                    options.addArguments("--start-maximized");
+                    driverPool.get().manage().window().setSize(new Dimension(1024, 768));
 
                     break;
 
