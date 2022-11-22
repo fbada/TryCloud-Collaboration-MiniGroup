@@ -23,5 +23,4 @@ mvn test -Dcucumber.filter.tags="@smoke"
 You can pass change using command line argument BROWSER
 ```
 mvn test -DBROWSER=firefox
-
 ```
