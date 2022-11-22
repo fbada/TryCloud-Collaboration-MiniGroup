@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
         publish = true,
 
-        tags = ""
+        tags = "@US6"
 
 )
 public class CukesRunner {
