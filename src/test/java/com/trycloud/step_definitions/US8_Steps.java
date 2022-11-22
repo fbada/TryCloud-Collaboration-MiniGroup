@@ -14,8 +14,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 
 public class US8_Steps {
-FilesPage filesPage = new FilesPage();
-     String name;
+    FilesPage filesPage = new FilesPage();
+    String name;
 
     @And("user click action-icon from any file on the page")
     public void userClickActionIconFromAnyFileOnThePage() {
@@ -39,6 +39,8 @@ FilesPage filesPage = new FilesPage();
     public void verifyTheDeletedFileIsDisplayedOnThePage() {
         System.out.println(name);
 
-       Assert.assertTrue(Driver.getDriver().findElement(By.xpath("(//tr//span[contains(.,'" + name+ "')])[4]")).isDisplayed());
+        BrowserUtils.scrollToElement(Driver.getDriver().findElement(By.xpath("//tr//span[contains(.,'" + name + "')]")));
+        BrowserUtils.waitFor(2);
+        Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//tr//span[contains(.,'" + name + "')]")).isDisplayed());
     }
 }

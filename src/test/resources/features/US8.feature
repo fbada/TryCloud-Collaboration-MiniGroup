@@ -15,4 +15,4 @@ Feature: As a user, I should be able to access to Files module.
 
     Examples:
       | username | password    |
-      | user64    | Userpass123 |
+      | user65    | Userpass123 |
