@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="As a user, I should be able to log in. #1" time="64.857" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="As a user, I should be able to remove files from the favorites and upload a file directly" time="70.13" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,39 +61,26 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="Verify login with valid credentials #1" classname="As a user, I should be able to log in. #1" time="46.503">
+  <testcase name="Scenario: Verify users can upload a file inside a folder" classname="As a user, I should be able to remove files from the favorites and upload a file directly" time="70.13">
     <system-out><![CDATA[
-@US1 @smoketest
-Scenario Outline: Verify login with valid credentials          &amp#27;[90m# src/test/resources/features/US1.feature:11&amp#27;[0m
+@smoketest
+Scenario Outline: Scenario: Verify users can upload a file inside a folder &amp#27;[90m# src/test/resources/features/US7.feature:32&amp#27;[0m
 Browser: chrome
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser on the login page&amp#27;[0m                                 &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_on_the_login()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser types username &amp#27;[0m&amp#27;[32m&amp#27;[1m"user64"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"Userpass123"&amp#27;[0m &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_use_username_and_passcode(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser click the login button&amp#27;[0m                              &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_click_the_login_button()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify the user should be at the dashboard&amp#27;[0m              &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.verify_the_user_should_be_at_the_dashboard_page()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser on the login page&amp#27;[0m                                             &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_on_the_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser types username &amp#27;[0m&amp#27;[32m&amp#27;[1m"User94"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"Userpass123"&amp#27;[0m             &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_use_username_and_passcode(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser click the login button&amp#27;[0m                                          &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_click_the_login_button()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user clicks the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Files"&amp#27;[0m&amp#27;[32m module&amp#27;[0m                                  &amp#27;[90m# com.trycloud.step_definitions.US4_Steps.theUserClicksTheModule(java.lang.String)&amp#27;[0m
+randNum = 1
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser choose a folder from the page&amp#27;[0m                                  &amp#27;[90m# com.trycloud.step_definitions.US7_Steps.user_choose_a_folder_from_the_page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser uploads file with the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Upload"&amp#27;[0m&amp#27;[32m file option&amp#27;[0m                      &amp#27;[90m# com.trycloud.step_definitions.US10_Steps.user_uploads_file_with_the_file_option(java.lang.String)&amp#27;[0m
+fileName = Whhyyy
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify the file is displayed on the page&amp#27;[0m                            &amp#27;[90m# com.trycloud.step_definitions.US6_Steps.verify_the_file_is_displayed_on_the_page()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 26354
+    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 37222
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 24, 2022 12:22:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Verify login with valid credentials #2" classname="As a user, I should be able to log in. #1" time="18.354">
-    <system-out><![CDATA[
-@US1 @smoketest
-Scenario Outline: Verify login with valid credentials         &amp#27;[90m# src/test/resources/features/US1.feature:12&amp#27;[0m
-Browser: chrome
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser on the login page&amp#27;[0m                                &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_on_the_login()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser types username &amp#27;[0m&amp#27;[32m&amp#27;[1m"user4"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"Userpass123"&amp#27;[0m &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_use_username_and_passcode(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser click the login button&amp#27;[0m                             &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_click_the_login_button()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify the user should be at the dashboard&amp#27;[0m             &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.verify_the_user_should_be_at_the_dashboard_page()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 48399
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Nov 24, 2022 12:23:24 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 24, 2022 12:23:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>

@@ -1,7 +1,7 @@
 @US8
 
 Feature: As a user, I should be able to access to Files module.
-
+  @smoketest
   Scenario Outline: Verify users delete a file/folder
 
     Given user is on the login page
