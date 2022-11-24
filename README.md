@@ -1,4 +1,6 @@
 # Mini-Group TryCloud Suite
+
+[![Java CI with Maven](https://github.com/fbada/TryCloud-Collaboration-MiniGroup/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/fbada/TryCloud-Collaboration-MiniGroup/actions/workflows/maven.yml)
 Basic cucumber framework used for running automation tests on Github Actions and Jenkins using EC2 instances.
 This web application has automatic data backup for servers & computers with 
 secure, encrypted cloud that manages all types of files, photos, and videos
