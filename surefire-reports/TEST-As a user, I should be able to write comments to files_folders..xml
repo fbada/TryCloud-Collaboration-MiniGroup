@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="As a user, I should be able to log in. #2" time="6.575" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="As a user, I should be able to write comments to files/folders." time="34.411" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,22 +61,27 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="Verify user login fail with invalid credentials" classname="As a user, I should be able to log in. #2" time="6.575">
+  <testcase name="Verify users can add the folder" classname="As a user, I should be able to write comments to files/folders." time="34.411">
     <system-out><![CDATA[
-@US2 @smoketest
-Scenario Outline: Verify user login fail with invalid credentials       &amp#27;[90m# src/test/resources/features/US2.feature:12&amp#27;[0m
+@US9 @smoketest
+Scenario Outline: Verify users can add the folder              &amp#27;[90m# src/test/resources/features/US9.feature:18&amp#27;[0m
 Browser: chrome
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser on the login page&amp#27;[0m                                          &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_on_the_login()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser types invalid username &amp#27;[0m&amp#27;[32m&amp#27;[1m"UserWrong"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"Wrong"&amp#27;[0m     &amp#27;[90m# com.trycloud.step_definitions.US2_Steps.user_types_invalid_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser click the login button&amp#27;[0m                                       &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_click_the_login_button()&amp#27;[0m
-Wrong username or password.
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify &amp#27;[0m&amp#27;[32m&amp#27;[1m"Wrong username or password."&amp#27;[0m&amp#27;[32m message should be displayed&amp#27;[0m &amp#27;[90m# com.trycloud.step_definitions.US2_Steps.verifyMessageShouldBeDisplayed(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser is on the login page&amp#27;[0m                              &amp#27;[90m# com.trycloud.step_definitions.US5_Steps.user_on_the_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters &amp#27;[0m&amp#27;[32m&amp#27;[1m"user94"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"Userpass123"&amp#27;[0m                  &amp#27;[90m# com.trycloud.step_definitions.US5_Steps.userEntersAnd(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser click the login button&amp#27;[0m                             &amp#27;[90m# com.trycloud.step_definitions.US1_Steps.user_click_the_login_button()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe user clicks the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Files"&amp#27;[0m&amp#27;[32m module&amp#27;[0m                       &amp#27;[90m# com.trycloud.step_definitions.US4_Steps.theUserClicksTheModule(java.lang.String)&amp#27;[0m
+Selected file name = Whhyyy
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser click action-icon from any file on the page&amp#27;[0m         &amp#27;[90m# com.trycloud.step_definitions.US8_Steps.userClickActionIconFromAnyFileOnThePage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe user choose the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Details"&amp#27;[0m&amp#27;[32m option&amp#27;[0m                     &amp#27;[90m# com.trycloud.step_definitions.US9_Steps.theUserChooseTheOption(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser write a comment inside the input box&amp#27;[0m                &amp#27;[90m# com.trycloud.step_definitions.US9_Steps.userWriteACommentInsideTheInputBox()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser click the submit button to post it&amp#27;[0m                  &amp#27;[90m# com.trycloud.step_definitions.US9_Steps.userClickTheSubmitButtonToPostIt()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mVerify the comment is displayed in the comment section.&amp#27;[0m &amp#27;[90m# com.trycloud.step_definitions.US9_Steps.verifyTheCommentIsDisplayedInTheCommentSection()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 51600
+    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 54844
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 24, 2022 12:12:30 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 24, 2022 12:12:39 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>

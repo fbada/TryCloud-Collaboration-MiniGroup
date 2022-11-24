@@ -1,4 +1,4 @@
-@US9 @smoke
+@US9 @smoketest
 Feature: As a user, I should be able to write comments to files/folders.
 
 
