@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Tag: @US1</title>
+<title>Cucumber Reports  - Tag: @US6</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>24 Nov 2022, 00:52</td>
+      <td>24 Nov 2022, 01:26</td>
     </tr>
   </tbody>
 </table>
@@ -126,20 +126,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@US1</td>
-          <td      class="passed"    >8</td>
+          <td class="tagname">@US6</td>
+          <td      class="passed"    >13</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">8</td>
+          <td class="total">14</td>
 
-          <td  class="passed"    >2</td>
-          <td >0</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >1</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="55754908000">55.754</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="95395532000">1:35.395</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,25 +171,24 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1787718310.html">As a user, I should be able to log in.</a>
+      <a href="report-feature_1340380587.html">As a user, I should be able to remove files from favorites and upload a file directly</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2149474578.html">@US1</a>
-       <a href="report-tag_338298432.html">@smoketest</a>
+       <a href="report-tag_2149474583.html">@US6</a>
 </div>
 
 
-  <span class="lead-duration duration">28.601</span>
+  <span class="lead-duration duration">54.217</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify login with valid credentials</span>
+  <span class="name">Verify users to remove files to Favorites</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -220,7 +219,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.trycloud.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">9.838</span>
+  <span class="lead-duration duration">8.431</span>
 
           </div>
 
@@ -257,7 +256,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user on the login page</span>
 
-  <span class="lead-duration duration">3.826</span>
+  <span class="lead-duration duration">1.391</span>
 
 </div>
 
@@ -282,9 +281,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">user types username <span class="argument">&quot;user64&quot;</span> and password <span class="argument">&quot;Userpass123&quot;</span></span>
+  <span class="name">user types username <span class="argument">&quot;User94&quot;</span> and password <span class="argument">&quot;Userpass123&quot;</span></span>
 
-  <span class="lead-duration duration">0.562</span>
+  <span class="lead-duration duration">0.288</span>
 
 </div>
 
@@ -311,7 +310,115 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user click the login button</span>
 
-  <span class="lead-duration duration">24.043</span>
+  <span class="lead-duration duration">11.435</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">the user clicks the <span class="argument">&quot;Files&quot;</span> module</span>
+
+  <span class="lead-duration duration">9.944</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">the user clicks action-icon from any file on the page to remove</span>
+
+  <span class="lead-duration duration">20.130</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user choose the <span class="argument">&quot;Remove from favorites&quot;</span> option</span>
+
+  <span class="lead-duration duration">5.626</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user click the <span class="argument">&quot;Favorites&quot;</span> sub-module on the left side</span>
+
+  <span class="lead-duration duration">5.185</span>
 
 </div>
 
@@ -336,9 +443,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify the user should be at the dashboard</span>
+  <span class="name">verify that the file is removed from the Favorites sub-module&rsquo;s table</span>
 
-  <span class="lead-duration duration">0.169</span>
+  <span class="lead-duration duration">0.215</span>
 
 </div>
 
@@ -383,7 +490,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.trycloud.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.359</span>
+  <span class="lead-duration duration">0.272</span>
 
           </div>
 
@@ -404,25 +511,24 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1787718310.html">As a user, I should be able to log in.</a>
+      <a href="report-feature_1340380587.html">As a user, I should be able to remove files from favorites and upload a file directly</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2149474578.html">@US1</a>
-       <a href="report-tag_338298432.html">@smoketest</a>
+       <a href="report-tag_2149474583.html">@US6</a>
 </div>
 
 
-  <span class="lead-duration duration">27.153</span>
+  <span class="lead-duration duration">41.177</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify login with valid credentials</span>
+  <span class="name">verify users to upload a file from Files</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -431,7 +537,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-5" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -453,7 +559,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.trycloud.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">5.184</span>
+  <span class="lead-duration duration">1.855</span>
 
           </div>
 
@@ -470,9 +576,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -482,7 +588,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -490,7 +596,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user on the login page</span>
 
-  <span class="lead-duration duration">3.829</span>
+  <span class="lead-duration duration">1.624</span>
 
 </div>
 
@@ -515,9 +621,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">user types username <span class="argument">&quot;user4&quot;</span> and password <span class="argument">&quot;Userpass123&quot;</span></span>
+  <span class="name">user types username <span class="argument">&quot;User34&quot;</span> and password <span class="argument">&quot;Userpass123&quot;</span></span>
 
-  <span class="lead-duration duration">0.473</span>
+  <span class="lead-duration duration">0.212</span>
 
 </div>
 
@@ -544,7 +650,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user click the login button</span>
 
-  <span class="lead-duration duration">22.770</span>
+  <span class="lead-duration duration">12.324</span>
 
 </div>
 
@@ -567,11 +673,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify the user should be at the dashboard</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">the user clicks the <span class="argument">&quot;Files&quot;</span> module</span>
 
-  <span class="lead-duration duration">0.080</span>
+  <span class="lead-duration duration">7.599</span>
 
 </div>
 
@@ -591,6 +697,96 @@ $(document).ready(function() {
 
 
       </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user uploads file with the <span class="argument">&quot;Upload&quot;</span> file option</span>
+
+  <span class="lead-duration duration">7.330</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify the file is displayed on the page</span>
+
+  <span class="lead-duration duration">12.086</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.='Whhyyy']&quot;}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Mac-1669250808430.local', ip: '10.79.0.172', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/24/8k48jl6d249...}, goog:chromeOptions: {debuggerAddress: localhost:49219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2222f192cfef2b331e128749b2faef1
+*** Element info: {Using=xpath, value=//span[.='Whhyyy']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.trycloud.step_definitions.US6_Steps.verify_the_file_is_displayed_on_the_page(US6_Steps.java:43)
+	at &#10045;.verify the file is displayed on the page(file:///Users/runner/work/TryCloud-Collaboration-MiniGroup/TryCloud-Collaboration-MiniGroup/src/test/resources/features/US6.feature:29)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
   </div>
 </div>
 
@@ -598,7 +794,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -610,13 +806,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-8" class="inner-level collapse collapsable-details ">
+    <div id="after-9" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.trycloud.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.240</span>
+  <span class="lead-duration duration">0.364</span>
 
           </div>
 
@@ -625,6 +821,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
+      <a>verify users to upload a file from Files</a>
+      <a href="embeddings/embedding_-1591781755.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-10" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1591781755.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
