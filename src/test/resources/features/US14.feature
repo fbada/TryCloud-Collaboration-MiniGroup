@@ -1,4 +1,4 @@
-@US14
+@US14 @smoketest
 Feature: As a user, I should be able to search any item/ users from the homepage.
   Story: As a user, I should be able to search any item/ users from the homepage.
   #prereq -> file/folder/user MUST EXIST

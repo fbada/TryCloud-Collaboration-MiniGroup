@@ -1,6 +1,6 @@
 
 Feature: As a user, I should be able to access to Talks module
-  @US11 @smoke
+  @US11 @smoketest
   Scenario: verify users to access to Talks module
     Given user on the dashboard page.
     When the user clicks the "Talk" module.
