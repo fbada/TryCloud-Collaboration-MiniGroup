@@ -1,20 +1,25 @@
 # Mini-Group TryCloud Suite
 
 [![Java CI with Maven](https://github.com/fbada/TryCloud-Collaboration-MiniGroup/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/fbada/TryCloud-Collaboration-MiniGroup/actions/workflows/maven.yml)
+
+
+
 Basic cucumber framework used for running automation tests on Github Actions and Jenkins using EC2 instances.
 This web application has automatic data backup for servers & computers with 
 secure, encrypted cloud that manages all types of files, photos, and videos
 Remote file access from any device. It allowss for team collaboration and real-time communication.
 
 BDD Cucumber framework  is used to test the TryCloud company’s cloud storage web-based application in this assignment specifically using elenium and Javaa. 
-
+```
 Java 11
 Maven 3
 Selenium WebDriver, 
 Junit 4, 
 Cucumber Design patterns - POM, Singleton 
 Git/Github
-
+Jenkins
+GitHub Actions
+```
 ## Running locally
 To run locally and generate HTML reports, use this maven goal *verify*. HTML reports should be generated under target/cucumber-html-reports
 ```
