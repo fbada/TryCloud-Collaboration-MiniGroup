@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="As a user, I should be able to access to Talks module" time="52.056" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Story: As a user, I should be able to view the contact list." time="46.724" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -62,23 +62,75 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="verify users to access to Talks module" classname="As a user, I should be able to access to Talks module" time="52.056">
-    <system-out><![CDATA[
-@US11 @smoketest
-Scenario: verify users to access to Talks module   &amp#27;[90m# src/test/resources/features/US11.feature:4&amp#27;[0m
+  <testcase name="verify users can see all the contact names on the contact list" classname="Story: As a user, I should be able to view the contact list." time="46.724">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;app-content-list-item-line-one&apos;]&quot;}&#10;  (Session info: chrome=107.0.5304.87)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Mac-1669248820696.local&apos;, ip: &apos;10.212.0.59&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/24/8k48jl6d249...}, goog:chromeOptions: {debuggerAddress: localhost:49208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 031926ed3704eade423ddad08d35b1a8&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;app-content-list-item-line-one&apos;]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='app-content-list-item-line-one']"}
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Mac-1669248820696.local', ip: '10.212.0.59', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/24/8k48jl6d249...}, goog:chromeOptions: {debuggerAddress: localhost:49208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 031926ed3704eade423ddad08d35b1a8
+*** Element info: {Using=xpath, value=//div[@class='app-content-list-item-line-one']}
+]]></error>
+    <system-out><![CDATA[Nov 24, 2022 12:26:37 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cucumber9730363370683486632.json' contains 10 features
+
+&amp#27;[32m&amp#27;[1m┌──────────────────────────────────────────────────────────────────────────┐&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m View your Cucumber Report at:                                            &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m &amp#27;[1m&amp#27;[36m&amp#27;[4mhttps://reports.cucumber.io/reports/4f09b464-3420-48bf-8cfd-a7405db54561&amp#27;[0m &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                          &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m &amp#27;[1mThis report will self-destruct in 24h.&amp#27;[0m                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m Keep reports forever: &amp#27;[4m&amp#27;[1m&amp#27;[36mhttps://reports.cucumber.io/profile&amp#27;[0m                &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m└──────────────────────────────────────────────────────────────────────────┘&amp#27;[0m
+
+@US13 @smoketest
+Scenario: verify users can see all the contact names on the contact list &amp#27;[90m# src/test/resources/features/US13.feature:3&amp#27;[0m
 Browser: chrome
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser on the dashboard page.&amp#27;[0m                &amp#27;[90m# com.trycloud.step_definitions.US11_Steps.user_on_the_dashboard_page()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user clicks the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Talk"&amp#27;[0m&amp#27;[32m module.&amp#27;[0m          &amp#27;[90m# com.trycloud.step_definitions.US11_Steps.the_user_clicks_the_module(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify the page title is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Talk - Trycloud"&amp#27;[0m&amp#27;[32m.&amp#27;[0m &amp#27;[90m# com.trycloud.step_definitions.US11_Steps.verify_the_page_title_is(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser on the dashboard page&amp#27;[0m                                       &amp#27;[90m# com.trycloud.step_definitions.US12_Steps.user_on_the_dashboard_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user clicks the contacts module&amp#27;[0m                               &amp#27;[90m# com.trycloud.step_definitions.US13_Steps.the_user_clicks_the_contacts_module()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mverify the contact names are in the list&amp#27;[0m                          &amp#27;[90m# com.trycloud.step_definitions.US13_Steps.verify_the_contact_names_are_in_the_list()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='app-content-list-item-line-one']"}
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Mac-1669248820696.local', ip: '10.212.0.59', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/24/8k48jl6d249...}, goog:chromeOptions: {debuggerAddress: localhost:49208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 031926ed3704eade423ddad08d35b1a8
+*** Element info: {Using=xpath, value=//div[@class='app-content-list-item-line-one']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at com.trycloud.step_definitions.US13_Steps.verify_the_contact_names_are_in_the_list(US13_Steps.java:18)
+	at ✽.verify the contact names are in the list(file:///Users/runner/work/TryCloud-Collaboration-MiniGroup/TryCloud-Collaboration-MiniGroup/src/test/resources/features/US13.feature:6)
+&amp#27;[0m
+
+    Embedding verify users can see all the contact names on the contact list [image/png 45463 bytes]
+
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 44963
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 13994
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 24, 2022 12:23:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Nov 24, 2022 12:23:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
 </testsuite>
