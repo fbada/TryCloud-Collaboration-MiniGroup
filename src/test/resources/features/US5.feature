@@ -1,7 +1,6 @@
 @US5
 Feature: As a user, I should be able to access to Files module.
 
-
   Scenario Outline: Verify users to add files to Favorites
 
     Given user is on the login page

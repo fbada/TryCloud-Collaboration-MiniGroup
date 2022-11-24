@@ -27,7 +27,9 @@ Feature: As a user, I should be able to remove files from favorites and upload a
     When the user clicks the "Files" module
     And user uploads file with the "Upload" file option
     Then verify the file is displayed on the page
-
+#comment
     Examples:
       | username | password    |
-      | User64    | Userpass123 |
+      | User34    | Userpass123 |
+     #| User64   | Userpass123 |
+     # | User94   | Userpass123 |

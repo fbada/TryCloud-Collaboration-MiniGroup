@@ -9,4 +9,4 @@ Feature: As a user, I should be able to log in.
     Examples:
       | username | password    |
       | user64   | Userpass123 |
-      | user4    | Userpass123 |
+     # | user4    | Userpass123 |

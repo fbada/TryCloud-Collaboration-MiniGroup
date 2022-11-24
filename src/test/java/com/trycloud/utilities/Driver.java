@@ -60,7 +60,7 @@ public class Driver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
-                    driverPool.get().manage().window().setSize(new Dimension(1920, 1280));
+                    driverPool.get().manage().window().setSize(new Dimension(1280, 920));
 
                     break;
 

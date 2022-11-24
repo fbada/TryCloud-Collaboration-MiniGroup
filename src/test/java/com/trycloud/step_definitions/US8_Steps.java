@@ -38,7 +38,6 @@ public class US8_Steps {
     @Then("Verify the deleted file is displayed on the page.")
     public void verifyTheDeletedFileIsDisplayedOnThePage() {
         System.out.println(name);
-
         BrowserUtils.scrollToElement(Driver.getDriver().findElement(By.xpath("//tr//span[contains(.,'" + name + "')]")));
         BrowserUtils.waitFor(2);
         Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//tr//span[contains(.,'" + name + "')]")).isDisplayed());
