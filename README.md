@@ -1,5 +1,17 @@
 # Mini-Group TryCloud Suite
-Basic cucumber framework used for running automation tests on Jenkins.
+Basic cucumber framework used for running automation tests on Github Actions and Jenkins using EC2 instances.
+This web application has automatic data backup for servers & computers with 
+secure, encrypted cloud that manages all types of files, photos, and videos
+Remote file access from any device. It allowss for team collaboration and real-time communication.
+
+BDD Cucumber framework  is used to test the TryCloud company’s cloud storage web-based application in this assignment specifically using elenium and Javaa. 
+
+Java 11
+Maven 3
+Selenium WebDriver, 
+Junit 4, 
+Cucumber Design patterns - POM, Singleton 
+Git/Github
 
 ## Running locally
 To run locally and generate HTML reports, use this maven goal *verify*. HTML reports should be generated under target/cucumber-html-reports
@@ -20,7 +32,7 @@ You can pass a custom tag using terminal. Available tags are **@smoke**, **@regr
 mvn test -Dcucumber.filter.tags="@smoke"
 ```
 ## Browsers
-You can pass change using command line argument BROWSER
+You can pass change using command line argument BROWSER, and run two tests parallel with two separate tags as seen below
 ```
-mvn test -DBROWSER=firefox
+mvn test -DBROWSER=firefox or mvn test -DBROWSER=chrome
 ```
