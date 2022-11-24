@@ -26,10 +26,10 @@ Install [Cucumber HTML report plugin](https://plugins.jenkins.io/cucumber-report
 mvn test
 ```
 ## Tags
-You can pass a custom tag using terminal. Available tags are **@smoke**, **@regression**. 
+You can pass a custom tag using terminal. Available tags are **@smoketest**, **@regression**. 
 
 ```
-mvn test -Dcucumber.filter.tags="@smoke"
+mvn test -Dcucumber.filter.tags="@smoketest"
 ```
 ## Browsers
 You can pass change using command line argument BROWSER, and run two tests parallel with two separate tags as seen below
