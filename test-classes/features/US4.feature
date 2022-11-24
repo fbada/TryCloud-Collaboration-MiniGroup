@@ -1,7 +1,7 @@
-@US4
+@US4 @smoketest
 Feature: As a user, I should be able to access to Files module.
 
-  @smoketest
+
   Scenario Outline: verify users can access to Files module
     Given user on the login page
     When user types username "<username>" and password "<password>"
@@ -14,7 +14,7 @@ Feature: As a user, I should be able to access to Files module.
       | user34       | Userpass123 |
 
 
-  @smoketest
+
   Scenario Outline: verify users can access to Files module
     Given user on the login page
     When user types username "<username>" and password "<password>"

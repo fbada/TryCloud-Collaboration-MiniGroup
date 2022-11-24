@@ -16,7 +16,7 @@ Story: As a user, I should be able to manage folders.
      | username | password    |
      | User4    | Userpass123 |
 
-  @smoketest
+
   Scenario Outline: Scenario: Verify users can upload a file inside a folder
 
     Given user on the login page
