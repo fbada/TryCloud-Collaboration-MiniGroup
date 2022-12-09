@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>09 Dec 2022, 18:41</td>
+      <td>09 Dec 2022, 18:49</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@US14</td>
-          <td      class="passed"    >5</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >6</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">6</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="47180552000">47.180</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="23965924000">23.965</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -182,12 +182,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">47.180</span>
+  <span class="lead-duration duration">23.965</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Verify users can search any files/folder/users from the search box.</span>
 
@@ -198,7 +198,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -220,7 +220,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.trycloud.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">3.777</span>
+  <span class="lead-duration duration">4.181</span>
 
           </div>
 
@@ -237,9 +237,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -249,7 +249,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -257,7 +257,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user on the login page</span>
 
-  <span class="lead-duration duration">9.455</span>
+  <span class="lead-duration duration">2.765</span>
 
 </div>
 
@@ -284,7 +284,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user types username <span class="argument">&quot;User64&quot;</span> and password <span class="argument">&quot;Userpass123&quot;</span></span>
 
-  <span class="lead-duration duration">0.340</span>
+  <span class="lead-duration duration">0.414</span>
 
 </div>
 
@@ -311,7 +311,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user click the login button</span>
 
-  <span class="lead-duration duration">27.774</span>
+  <span class="lead-duration duration">10.632</span>
 
 </div>
 
@@ -338,7 +338,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">the user clicks the magnifier icon on the right top</span>
 
-  <span class="lead-duration duration">2.080</span>
+  <span class="lead-duration duration">1.778</span>
 
 </div>
 
@@ -365,7 +365,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">users search any existing <span class="argument">&quot;User34&quot;</span></span>
 
-  <span class="lead-duration duration">4.360</span>
+  <span class="lead-duration duration">4.194</span>
 
 </div>
 
@@ -388,11 +388,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">verify the app displays the expected result <span class="argument">&quot;User34&quot;</span></span>
 
-  <span class="lead-duration duration">3.168</span>
+  <span class="lead-duration duration">4.179</span>
 
 </div>
 
@@ -400,43 +400,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id ='header-menu-unified-search']//a//h3[contains(@title, 'User34')]&quot;}
-  (Session info: chrome=108.0.5359.94)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Mac-1670610343962.local', ip: '10.79.0.195', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.94, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/24/8k48jl6d249...}, goog:chromeOptions: {debuggerAddress: localhost:49263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ed3fa2bf1609d53a741f7307c1ffe80a
-*** Element info: {Using=xpath, value=//div[@id ='header-menu-unified-search']//a//h3[contains(@title, 'User34')]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.trycloud.pages.DashboardCommon.searchQueryResult(DashboardCommon.java:46)
-	at com.trycloud.step_definitions.US14_Steps.verify_the_app_displays_the_expected_result(US14_Steps.java:30)
-	at &#10045;.verify the app displays the expected result &quot;User34&quot;(file:///Users/runner/work/TryCloud-Collaboration-MiniGroup/TryCloud-Collaboration-MiniGroup/src/test/resources/features/US14.feature:12)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -456,7 +419,7 @@ Session ID: ed3fa2bf1609d53a741f7307c1ffe80a
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -468,13 +431,13 @@ Session ID: ed3fa2bf1609d53a741f7307c1ffe80a
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.trycloud.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.875</span>
+  <span class="lead-duration duration">0.146</span>
 
           </div>
 
@@ -483,21 +446,6 @@ Session ID: ed3fa2bf1609d53a741f7307c1ffe80a
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>Verify users can search any files/folder/users from the search box.</a>
-      <a href="embeddings/embedding_-2061256848.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-2061256848.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>

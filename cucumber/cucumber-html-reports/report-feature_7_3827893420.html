@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>09 Dec 2022, 18:41</td>
+      <td>09 Dec 2022, 18:49</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">As a user, I should be able to remove files from the favorites and upload a file directly</td>
-          <td      class="passed"    >4</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >2</td>
+          <td      class="passed"    >7</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">7</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="87646874000">1:27.646</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="68189096000">1:8.189</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">As a user, I should be able to remove files from the favorites and upload a file directly</span>
 
@@ -191,12 +191,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1:27.646</span>
+  <span class="lead-duration duration">1:8.189</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Scenario: Verify users can upload a file inside a folder</span>
 
@@ -207,7 +207,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -229,7 +229,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.trycloud.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">3.862</span>
+  <span class="lead-duration duration">3.357</span>
 
           </div>
 
@@ -246,9 +246,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -258,7 +258,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -266,7 +266,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user on the login page</span>
 
-  <span class="lead-duration duration">10.655</span>
+  <span class="lead-duration duration">3.995</span>
 
 </div>
 
@@ -293,7 +293,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user types username <span class="argument">&quot;User94&quot;</span> and password <span class="argument">&quot;Userpass123&quot;</span></span>
 
-  <span class="lead-duration duration">0.222</span>
+  <span class="lead-duration duration">0.366</span>
 
 </div>
 
@@ -320,7 +320,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user click the login button</span>
 
-  <span class="lead-duration duration">58.762</span>
+  <span class="lead-duration duration">23.696</span>
 
 </div>
 
@@ -347,7 +347,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">the user clicks the <span class="argument">&quot;Files&quot;</span> module</span>
 
-  <span class="lead-duration duration">17.821</span>
+  <span class="lead-duration duration">18.155</span>
 
 </div>
 
@@ -370,11 +370,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">user choose a folder from the page</span>
 
-  <span class="lead-duration duration">0.183</span>
+  <span class="lead-duration duration">4.148</span>
 
 </div>
 
@@ -382,31 +382,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.IndexOutOfBoundsException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.IndexOutOfBoundsException: Index -2 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:372)
-	at java.base/java.util.ArrayList.get(ArrayList.java:459)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at com.sun.proxy.$Proxy22.get(Unknown Source)
-	at com.trycloud.step_definitions.US7_Steps.user_choose_a_folder_from_the_page(US7_Steps.java:59)
-	at &#10045;.user choose a folder from the page(file:///Users/runner/work/TryCloud-Collaboration-MiniGroup/TryCloud-Collaboration-MiniGroup/src/test/resources/features/US7.feature:26)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -422,11 +397,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user uploads file with the <span class="argument">&quot;Upload&quot;</span> file option</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.316</span>
 
 </div>
 
@@ -449,11 +424,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">verify the file is displayed on the page</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">10.509</span>
 
 </div>
 
@@ -480,7 +455,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -492,13 +467,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.trycloud.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.262</span>
+  <span class="lead-duration duration">0.268</span>
 
           </div>
 
@@ -507,21 +482,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>Scenario: Verify users can upload a file inside a folder</a>
-      <a href="embeddings/embedding_363670209.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_363670209.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
