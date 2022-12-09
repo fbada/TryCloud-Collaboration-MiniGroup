@@ -1,4 +1,0 @@
-# Created at 2022-11-24T17:44:12.150
-Boot Manifest-JAR contains absolute paths in classpath 'D:\a\TryCloud-Collaboration-MiniGroup\TryCloud-Collaboration-MiniGroup\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-
