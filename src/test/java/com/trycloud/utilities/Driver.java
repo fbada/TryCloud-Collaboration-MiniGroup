@@ -61,7 +61,6 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
                     driverPool.get().manage().window().setSize(new Dimension(1280, 920));
-
                     break;
 
                 case "chrome-headless":
@@ -69,15 +68,16 @@ public class Driver {
                     driverPool.set(new ChromeDriver(new ChromeOptions().setHeadless(true)));
                     driverPool.get().manage().window().maximize();
                     break;
+
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driverPool.set((new FirefoxDriver()));
-                    driverPool.get().manage().window().maximize();
+                    driverPool.get().manage().window().setSize(new Dimension(1280, 920));
                     break;
+
                 case "firefox-headless":
                     WebDriverManager.firefoxdriver().setup();
                     driverPool.set(new FirefoxDriver(new FirefoxOptions().setHeadless(true)));
-
                     break;
             }
 
